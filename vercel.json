@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/trading_middleware/__init__" }
-  ]
+     "builds": [
+         {
+             "src": "trading_middleware/__init__.py",
+             "use": "@vercel/python"
+         }
+     ],
+     "routes": [
+         {
+             "src": "/(.*)",
+             "dest": "trading_middleware/__init__.py"
+         }
+     ]
 }
+
