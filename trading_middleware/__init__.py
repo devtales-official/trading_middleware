@@ -30,7 +30,7 @@ def indicatorAlert():
     # get server time
     print(cm_futures_client.time())
 
-    cm_futures_client = CMFutures(key='hOlm4fkRkI5gdCsmjXFuVfpOgysT1zIqgfWMNYKR1DceA5EcdDDUg7rAkiOPkhHG', secret='zCHHger4nTRoGUYt7wLaUvMASTf9WyhL5EpGCAJkpvjeKFvICp3u9fZrqh8sE6Z6')
+    cm_futures_client = CMFutures(key=os.getenv('BINANCE_KEY'), secret=os.getenv('BINANCE_SECRET'))
 
     # Get account information
     print(cm_futures_client.account())
