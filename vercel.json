@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/trading_middleware/__init__" }
+  ]
+}
