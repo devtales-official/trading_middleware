@@ -24,6 +24,7 @@ except OSError:
     pass
 
 @app.route('/ping', methods=['GET'])
+def ping():
     return "pong"
 
 # a simple page that says hello
